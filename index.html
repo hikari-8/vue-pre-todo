@@ -11,9 +11,9 @@
 <!-- ルートのテンプレート -->
     <div id="app">
         <h2>Todo List</h2>
-        <form>
+        <form v-on:submit.prevent>
             <input type="text" placeholder="Todoを入力!">
-            <button>Add</button>
+            <button v-on:click="addItem">Add</button>
         </form>
 
         <!-- <p>
