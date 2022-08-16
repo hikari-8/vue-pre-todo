@@ -12,8 +12,14 @@
     <div id="app">
         <h2>Todo List</h2>
         <form v-on:submit.prevent>
-            <input type="text" placeholder="Todoを入力!">
+            <input type="text" placeholder="Todoを入力!"
+                    v-model="newItem">
             <button v-on:click="addItem">Add</button>
+            <ul>
+                <li v-for="todo in todos">{{ todo.item }}</li>
+            </ul>
+            <!-- エラーハンドリング用 -->
+            <pre>{{ $data }}</pre>
         </form>
 
         <!-- <p>
