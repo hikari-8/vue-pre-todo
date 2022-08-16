@@ -16,7 +16,11 @@
                     v-model="newItem">
             <button v-on:click="addItem">Add</button>
             <ul>
-                <li v-for="todo in todos">{{ todo.item }}</li>
+                <li v-for="todo in todos">
+                    <input type="checkbox"
+                            v-model="todo.isDone">
+                    <span>{{ todo.item }}</span>
+                </li>
             </ul>
             <!-- エラーハンドリング用 -->
             <pre>{{ $data }}</pre>
