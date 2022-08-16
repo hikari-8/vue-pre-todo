@@ -21,8 +21,11 @@
         <!-- <ol>
             <li v-for="color in colors">{{ color }}</li>
         </ol> -->
-        <button v-on:click="onClick">表示</button>
-        <p>{{ now }}</p>
+        <!-- <button v-on:click="onClick">表示</button>
+        <p>{{ now }}</p> -->
+        <p><input type="text" v-model="message"></p>
+        <p><input type="text" v-model="message"></p>
+        <pre>{{ $data }}</pre>
     </div>
     <script src="https://unpkg.com/vue@3.1.5"></script>
     <script src="js/main.js"></script>

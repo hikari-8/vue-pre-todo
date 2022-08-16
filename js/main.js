@@ -43,14 +43,20 @@
 //     })
 // }).mount('#app')
 
+// const app = Vue.createApp({
+//     data: ()=> ({
+//         now: "-"
+//     }),
+//     methods: {
+//         onClick: function() {
+//             this.now = new Date().toLocaleString()
+//             console.log(this)
+//         }
+//     }
+// }).mount('#app')
+
 const app = Vue.createApp({
     data: ()=> ({
-        now: "-"
-    }),
-    methods: {
-        onClick: function() {
-            this.now = new Date().toLocaleString()
-            console.log(this)
-        }
-    }
+    message: "Hello Piyopiyo!"
+    })
 }).mount('#app')
