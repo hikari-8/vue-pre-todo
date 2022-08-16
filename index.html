@@ -17,7 +17,10 @@
         <p>{{user.lastName}}</p>
         <p>{{colors[2]}}</p>
         <input type="text" v-bind:value="message"> -->
-        <p v-if="toggle">表示:)</p>
+        <!-- <p v-if="toggle">表示:)</p> -->
+        <ol>
+            <li v-for="color in colors">{{ color }}</li>
+        </ol>
     </div>
     <script src="https://unpkg.com/vue@3.1.5"></script>
     <script src="js/main.js"></script>

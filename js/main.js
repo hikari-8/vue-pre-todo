@@ -20,9 +20,15 @@
 // }).mount('#app')
 
 
+// const app = Vue.createApp({
+//     data: () => ({
+//         toggle: false
+//     })
+// })
+// app.mount("#app")
+
 const app = Vue.createApp({
-    data: () => ({
-        toggle: false
+    data: ()=> ({
+        colors: ["James", "John", "Mike"]
     })
-})
-app.mount("#app")
+}).mount('#app')
