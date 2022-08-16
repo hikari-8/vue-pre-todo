@@ -18,8 +18,11 @@
         <p>{{colors[2]}}</p>
         <input type="text" v-bind:value="message"> -->
         <!-- <p v-if="toggle">表示:)</p> -->
-        <ol>
+        <!-- <ol>
             <li v-for="color in colors">{{ color }}</li>
+        </ol> -->
+        <ol>
+            <li v-for="(value, key) in user">{{ key }}: {{ value }}</li>
         </ol>
     </div>
     <script src="https://unpkg.com/vue@3.1.5"></script>

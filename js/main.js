@@ -27,8 +27,18 @@
 // })
 // app.mount("#app")
 
+// const app = Vue.createApp({
+//     data: ()=> ({
+//         colors: ["James", "John", "Mike"]
+//     })
+// }).mount('#app')
+
 const app = Vue.createApp({
     data: ()=> ({
-        colors: ["James", "John", "Mike"]
+        user: {
+            firstName: "John",
+            lastName: "Mike",
+            Age: "30"
+        }
     })
 }).mount('#app')
