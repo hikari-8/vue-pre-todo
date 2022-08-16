@@ -1,3 +1,7 @@
+
+
+
+
 // const app = Vue.createApp({
 //     data: () => ({
 //         message: 'Hello Vue.js!'
@@ -61,12 +65,12 @@
 //     })
 // }).mount('#app')
 
-const app = Vue.createApp({
-    data: ()=> ({
+// const app = Vue.createApp({
+//     data: ()=> ({
         
-    })
-})
-app.component("piyopiyo-component",{
-    template: "<p>Hello, piyopiyo!</p>"
-})
-app.mount('#app')
+//     })
+// })
+// app.component("piyopiyo-component",{
+//     template: "<p>Hello, piyopiyo!</p>"
+// })
+// app.mount('#app')
