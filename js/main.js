@@ -33,12 +33,24 @@
 //     })
 // }).mount('#app')
 
+// const app = Vue.createApp({
+//     data: ()=> ({
+//         user: {
+//             firstName: "John",
+//             lastName: "Mike",
+//             Age: "30"
+//         }
+//     })
+// }).mount('#app')
+
 const app = Vue.createApp({
     data: ()=> ({
-        user: {
-            firstName: "John",
-            lastName: "Mike",
-            Age: "30"
+        now: "-"
+    }),
+    methods: {
+        onClick: function() {
+            this.now = new Date().toLocaleString()
+            console.log(this)
         }
-    })
+    }
 }).mount('#app')
