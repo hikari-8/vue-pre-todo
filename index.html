@@ -10,13 +10,14 @@
 <body>
 <!-- ルートのテンプレート -->
     <div id="app">
-        <p>
+        <!-- <p>
             {{ message }}
         </p>
         <p>{{count}}</p>
         <p>{{user.lastName}}</p>
         <p>{{colors[2]}}</p>
-        <input type="text" v-bind:value="message">
+        <input type="text" v-bind:value="message"> -->
+        <p v-if="toggle">表示:)</p>
     </div>
     <script src="https://unpkg.com/vue@3.1.5"></script>
     <script src="js/main.js"></script>
